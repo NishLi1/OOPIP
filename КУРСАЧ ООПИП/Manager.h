@@ -1,0 +1,20 @@
+#pragma once
+#include "UserBase.h"
+#include <string>
+
+class Manager : public UserBase {
+    int employee;
+    std::string department;
+public:
+    Manager(const std::string& h);
+    void showMenu() override;
+    void showInfo() override;
+    void addInfo() override;
+    void editInfo() override;
+    void deleteInfo() override;
+    void Sdepart();
+    void showSpec();
+    void Salary();
+    void Applications();
+    Role getType() override;
+};
